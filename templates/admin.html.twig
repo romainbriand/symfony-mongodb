@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block title %} - Administration Restomap{% endblock %}
+
+{% block body %}
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="{{ path('admin_restaurant') }}">Administration restomap</a>
+            <span class="navbar-text">
+      <a href="{{ path('home') }}">Retourner à la page d'accueil</a>
+    </span>
+        </nav>
+    </header>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+{% endblock %}

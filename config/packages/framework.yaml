@@ -14,3 +14,8 @@ framework:
     #fragments: true
     php_errors:
         log: true
+
+    cache:
+        prefix_seed: resto_
+        app: cache.adapter.redis
+        default_redis_provider: '%env(REDIS_URL)%'

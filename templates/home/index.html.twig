@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="{{ asset("css/main.css") }}">
+{% endblock %}
+
+{% block title %}
+    Bienvenue !{{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <div id="map"></div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset("js/main.js") }}"></script>
+    <script src="{{ asset("js/MapManager.js") }}"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&callback=initialize" async defer></script>
+{% endblock %}

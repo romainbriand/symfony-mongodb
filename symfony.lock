@@ -20,6 +20,9 @@
     "doctrine/common": {
         "version": "v2.11.0"
     },
+    "doctrine/data-fixtures": {
+        "version": "1.4.0"
+    },
     "doctrine/dbal": {
         "version": "v2.10.0"
     },
@@ -36,6 +39,18 @@
             "config/packages/prod/doctrine.yaml",
             "src/Entity/.gitignore",
             "src/Repository/.gitignore"
+        ]
+    },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "fc52d86631a6dfd9fdf3381d0b7e3df2069e51b3"
+        },
+        "files": [
+            "src/DataFixtures/AppFixtures.php"
         ]
     },
     "doctrine/doctrine-migrations-bundle": {
@@ -66,6 +81,23 @@
     "doctrine/migrations": {
         "version": "2.2.0"
     },
+    "doctrine/mongodb-odm": {
+        "version": "2.0.3"
+    },
+    "doctrine/mongodb-odm-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "1fd8598bf42227a1c8905edd32f640e4c5d15eff"
+        },
+        "files": [
+            "config/packages/doctrine_mongodb.yaml",
+            "config/packages/prod/doctrine_mongodb.yaml",
+            "src/Document/.gitignore"
+        ]
+    },
     "doctrine/orm": {
         "version": "v2.7.0"
     },
@@ -90,8 +122,14 @@
     "egulias/email-validator": {
         "version": "2.1.11"
     },
+    "fzaninotto/faker": {
+        "version": "v1.9.1"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "mongodb/mongodb": {
+        "version": "1.5.1"
     },
     "monolog/monolog": {
         "version": "2.0.1"
@@ -116,6 +154,9 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "1.0.1"
+    },
+    "predis/predis": {
+        "version": "v1.1.1"
     },
     "psr/cache": {
         "version": "1.0.1"
