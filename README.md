@@ -49,6 +49,12 @@ Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter
             - { name: request.param_converter }
 ```
 
+## Gestion manuelle du cache applicatif
+
+- De façon globale, on peut voir les différentes cache en place avec la commande ``php bin/console cache:pool:list``
+- Le cache qui nous concerne au niveau applicatif est par défaut "cache.app"
+- On peut supprimer le cache applicatif (donc Redis) avec la commande ``php bin/console cache:pool:clear cache.app``
+
 ## Lectures complémentaires :
 
 - [Configuring the cache with framework bundle](https://symfony.com/doc/current/cache.html#configuring-cache-with-frameworkbundle)
